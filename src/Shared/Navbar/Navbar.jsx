@@ -56,7 +56,9 @@ const Nabvbar = () => {
                         }
 
                         {
-                            user ? <> <Link  onClick={handleLogOut} className="text-red-500 hover:text-white hover:scale-105 px-3 py-2 rounded-md text-sm font-medium ">Logout</Link>       
+                            user ? <> 
+                            <Link to='/addcollege' className="text-red-500 hover:text-white hover:scale-105 px-3 py-2 rounded-md text-sm font-medium ">Add College</Link>       
+                            <Link  onClick={handleLogOut} className="text-red-500 hover:text-white hover:scale-105 px-3 py-2 rounded-md text-sm font-medium ">Logout</Link>       
                              </> : <> <Link to='/login' className="text-red-500 hover:text-white hover:scale-105 px-3 py-2 rounded-md text-sm font-medium "> Login </Link> </>
 
                              

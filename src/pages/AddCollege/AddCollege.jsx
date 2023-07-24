@@ -65,10 +65,10 @@ const MultiForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Here, you can handle the form submission, e.g., send data to a server or perform other actions.
-    console.log('College Data:', collegeData);
-    console.log('Event Data:', eventData);
-    console.log('Sport Data:', sportData);
-    console.log('Research Data:', researchData);
+    // console.log('College Data:', collegeData);
+    // console.log('Event Data:', eventData);
+    // console.log('Sport Data:', sportData);
+    // console.log('Research Data:', researchData);
 
     setCollegeData({ collegeName: '', collegeImage: '', collegeRatings: '', admissionProcess: '' });
     
@@ -76,6 +76,23 @@ const MultiForm = () => {
     setEventData({ eventName: '', eventDate: '', eventDescription: '' });
     setSportData({ sportName: '', sportDate: '', sportDescription: '' });
     setResearchData({ researchAuthor: '', researchPublishedDate: '', researchAbstract: '', researchFileLink: '' });
+
+
+    const collegesData = {collegeData, eventData, sportData, researchData}
+    console.log(collegesData);
+
+    fetch(`${import.meta.env.VITE_API_URL}/colleges`,{
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(collegesData)
+    })
+    .then(res => res.json())
+    .then(data =>{
+        console.log(data);
+    })
+
     
   };
 

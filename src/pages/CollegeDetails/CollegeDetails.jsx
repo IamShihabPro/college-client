@@ -5,7 +5,7 @@ import '@smastrom/react-rating/style.css'
 
 const CollegeDetails = () => {
     const collegeDetails = useLoaderData()
-    const {_id, name, image, ratings, events, admissionProcess, researchWorks, sportsCategories}  = collegeDetails 
+    const {_id, collegeData, eventData,  sportData, researchData}  = collegeDetails 
     return (
         <div className="py-24 text-black">
 
@@ -15,16 +15,16 @@ const CollegeDetails = () => {
 
                                 <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center">
                                     <img
-                                        src={image}
-                                        alt={name}
+                                        src={collegeData.collegeImage}
+                                        alt={collegeData.collegeName}
                                         className="w-full h-96 object-cover mb-4"
                                     />
                                     <h3 className="text-xl font-bold mb-2 text-white">
-                                        {name}
+                                        {collegeData.collegeName}
                                     </h3>
 
-                                    <Rating style={{ maxWidth: 80 }} value={ratings} readOnly />
-                                    <p className='text-white'>{admissionProcess}</p>
+                                    <Rating style={{ maxWidth: 80 }} value={collegeData.collegeRatings} readOnly />
+                                    <p className='text-white'>{collegeData.admissionProcess}</p>
                                     
                                 </div>
                     </div>
@@ -38,17 +38,15 @@ const CollegeDetails = () => {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center text-black"> Events</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center ">
-                            {
-                                events?.map(event =>  <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center justify-center p-1">
+                              <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center justify-center p-1">
                                 <h3 className="text-xl font-bold mb-2 text-white">
-                                  {event.eventTitle}
+                                  {eventData.eventName}
                                 </h3>
                   
-                                <h2 className='text-white'>{event.date}</h2>
-                                <p className='text-white p-2'>{event.description}</p>
+                                <h2 className='text-white'>{eventData.eventDate}</h2>
+                                <p className='text-white p-2'>{eventData.eventDescription}</p>
                   
-                              </div> )
-                            }
+                              </div> 
                         </div>
                     </div>
                 </section>
@@ -58,18 +56,16 @@ const CollegeDetails = () => {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center text-black"> Research Work</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
-                            {
-                                researchWorks?.map(researchWork =>  <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center justify-center p-1">
+                             <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center justify-center p-1">
                                 <h3 className="text-xl font-bold mb-2 text-white">
-                                  {researchWork.researchTitle}
+                                  {researchData.researchAuthor}
                                 </h3>
                   
-                                <h2 className='text-white'>{researchWork.author}</h2>
-                                <h2 className='text-white'>{researchWork.publishedDate}</h2>
-                                <p className='text-white p-2'>{researchWork.abstract}</p>
+                                <h2 className='text-white'>{researchData.researchPublishedDate}</h2>
+                                <h2 className='text-white'>{researchData.researchAbstrac}</h2>
+                                <p className='text-white p-2'>{researchData.researchFileLink}</p>
                   
-                              </div> )
-                            }
+                              </div> 
                         </div>
                     </div>
                 </section>
@@ -79,16 +75,16 @@ const CollegeDetails = () => {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-center text-black"> Sports</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
-                            {
-                                sportsCategories?.map(sports =>  <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center justify-center p-1">
+                              <div className="pb-4 bg-gray-900 rounded-lg shadow-md flex flex-col items-center justify-center p-1">
                                 <h3 className="text-xl font-bold mb-2 text-white">
-                                  {sports.sportsName}
+                                  {sportData.sportName}
                                 </h3>
                   
-                                <h2 className='text-white'>{sports.description}</h2>
+                                <h2 className='text-white'>{sportData.sportDate}</h2>
+                                <p className='text-white'>{sportData.sportDescription}</p>
+
                   
-                              </div> )
-                            }
+                              </div> 
                         </div>
                     </div>
                 </section>
