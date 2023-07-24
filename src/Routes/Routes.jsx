@@ -8,12 +8,15 @@ import Colleges from "../pages/Colleges/Colleges";
 import Home from "../pages/Home/Home";
 import CollegeDetails from "../pages/CollegeDetails/CollegeDetails";
 import AddCollege from "../pages/AddCollege/AddCollege";
+import PrivateRoutes from "../PrivateRoutes/PrivateRoutes";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
         {
             path: '/',
@@ -39,7 +42,7 @@ export const router = createBrowserRouter([
         },
         {
           path: '/collegedetails/:id',
-          element: <CollegeDetails></CollegeDetails>,
+          element: <PrivateRoutes> <CollegeDetails></CollegeDetails> </PrivateRoutes> ,
           loader: ({params}) => fetch(`${import.meta.env.VITE_API_URL}/colleges/${params.id}`)
         },
     ]
