@@ -3,10 +3,13 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import toast, { Toaster } from 'react-hot-toast';
+import { app } from '../../firebase/firebase.config';
+import { getAuth, signInWithPopup } from 'firebase/auth';
 
 const Login = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const {signIn, googleProvider} = useContext(AuthContext)
+    const auth = getAuth(app)
 
     const navigate = useNavigate()
     const location = useLocation()
@@ -25,6 +28,21 @@ const Login = () => {
             console.log(err);
         })
     };
+
+
+
+    const  handleGoggleSignIn = ()=>{
+        signInWithPopup(auth, googleProvider)
+        .then(res =>{
+            const user = res.user
+            console.log(user);
+            navigate(from, {replace: true} )
+        })
+        .catch(err =>{
+            console.log('error', err.message);
+        })
+    }
+
 
 
     // console.log(watch("example"));
@@ -47,9 +65,8 @@ const Login = () => {
                 type="email"
                 placeholder="Your Email"
                 name="email"
-                {...register("email", { required: true })}
+                {...register("email")}
                 />
-                {errors.email && <span className='text-sky-500'>Email is Required</span>}
             </div>
 
             <div className="mb-4">
@@ -60,10 +77,9 @@ const Login = () => {
                 type="password"
                 placeholder="Your Password"
                 name="password"
-                {...register("password", {required: true, minLength: 8 })}               
+                {...register("password")}               
                 />
-                {errors.password?.type === 'required' && <p className='text-sky-500'>Password is required</p>}
-                {errors.password?.type === 'minLength' && <p className='text-sky-500'>Password must be 8 character</p>}
+                
             </div>
 
             <div className="flex justify-center">
@@ -78,6 +94,11 @@ const Login = () => {
 
             <div className='mt-3 flex justify-center items-center'>
                 <h1 className='me-4 text-white'>Don't have an account? <span className='text-red-500'> <Link to='/signup'>Sign Up</Link> </span> </h1>
+            </div>
+
+
+            <div className='mt-4 flex justify-center items-center'>
+                <button onClick={handleGoggleSignIn}  > <img src='https://cdn-icons-png.flaticon.com/512/281/281764.png?w=740&t=st=1690216771~exp=1690217371~hmac=cea4ebc79873d3e18f482a1ad81c8a09e52dbe0cb3b55016109cfa14596fa61d' className='w-10 cursor-pointer' alt="" /></button>
             </div>
 
         </form>
