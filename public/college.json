@@ -1,0 +1,289 @@
+[
+  {
+    "id": 1,
+    "name": "Chittagong College",
+    "image": "https://img.freepik.com/free-photo/architecture-independence-palace-ho-chi-minh-city_181624-21243.jpg?w=1060&t=st=1690136374~exp=1690136974~hmac=bd8e1ed1523cb33d3249a422efbdb0d870321328b16a23f079951fca6d5a6574",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vivamus ac rhoncus augue, eget tristique mi. Morbi vel pharetra turpis, quis tincidunt quam.",
+    "events": [
+      {
+        "id": 101,
+        "title": "Orientation Day",
+        "date": "2023-08-15",
+        "description": "Join us for the Orientation Day for new students."
+      },
+      {
+        "id": 102,
+        "title": "Annual Sports Meet",
+        "date": "2023-10-20",
+        "description": "Cheer for your favorite teams in our Annual Sports Meet."
+      },
+      {
+        "id": 103,
+        "title": "Research Symposium",
+        "date": "2023-11-15",
+        "description": "Explore the latest research findings at our Research Symposium."
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 201,
+        "title": "Advancements in Artificial Intelligence",
+        "author": "John Doe",
+        "publishedDate": "2023-06-01",
+        "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nec sapien eget venenatis.",
+        "fileLink": "https://www.example.com/research/ai_advancements.pdf"
+      },
+      {
+        "id": 202,
+        "title": "Sustainable Energy Solutions",
+        "author": "Jane Smith",
+        "publishedDate": "2023-07-10",
+        "abstract": "Praesent tempus facilisis tellus id laoreet. Nulla facilisi. Aenean euismod felis et nulla cursus.",
+        "fileLink": "https://www.example.com/research/sustainable_energy.pdf"
+      }
+    ],
+    "sportsCategories": [
+      {
+        "id": 301,
+        "name": "Football",
+        "description": "Join our football team and compete in inter-college tournaments."
+      },
+      {
+        "id": 302,
+        "name": "Basketball",
+        "description": "Show off your basketball skills and represent the college."
+      },
+      {
+        "id": 303,
+        "name": "Swimming",
+        "description": "Join the swimming team and participate in aquatic events."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "City College",
+    "image": "https://img.freepik.com/free-photo/beautiful-streets-switzerland_8353-9666.jpg?t=st=1690113206~exp=1690113806~hmac=74e1527667e50b58aae2d062115ece926755d9a6db48fbc631a7e1bcbf2ac5f5",
+    "admissionProcess": "Vivamus venenatis lorem ac est laoreet interdum. Phasellus eu ante non mi eleifend auctor ut a erat.",
+    "events": [
+      {
+        "id": 104,
+        "title": "Career Fair",
+        "date": "2023-09-25",
+        "description": "Explore career opportunities at our annual Career Fair."
+      },
+      {
+        "id": 105,
+        "title": "Cultural Fest",
+        "date": "2023-11-08",
+        "description": "Experience the rich cultural diversity at our Cultural Fest."
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 203,
+        "title": "Data Science Applications",
+        "author": "David Johnson",
+        "publishedDate": "2023-07-25",
+        "abstract": "Nullam rhoncus, metus eu aliquam posuere, nulla odio bibendum nunc, in tincidunt velit justo vel ante.",
+        "fileLink": "https://www.example.com/research/data_science.pdf"
+      },
+      {
+        "id": 204,
+        "title": "Advancements in Medicine",
+        "author": "Emily Williams",
+        "publishedDate": "2023-08-12",
+        "abstract": "Integer eu risus eget risus sodales mattis id quis nulla.",
+        "fileLink": "https://www.example.com/research/medicine_advancements.pdf"
+      }
+    ],
+    "sportsCategories": [
+      {
+        "id": 304,
+        "name": "Volleyball",
+        "description": "Join the volleyball team and compete in inter-college matches."
+      },
+      {
+        "id": 305,
+        "name": "Tennis",
+        "description": "Play tennis and represent the college in tournaments."
+      },
+      {
+        "id": 306,
+        "name": "Athletics",
+        "description": "Train for athletics and participate in track and field events."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Mohsin College",
+    "image": "https://www.thoughtco.com/thmb/k4end_sk9Gi3XAp5Q4hBlPAjcPA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/swarthmore-college-Eric-Behrens-flickr-5706ffe35f9b581408d48cb3.jpg",
+    "admissionProcess": "Vivamus venenatis lorem ac est laoreet interdum. Phasellus eu ante non mi eleifend auctor ut a erat.",
+    "events": [
+      {
+        "id": 104,
+        "title": "Career Fair",
+        "date": "2023-09-25",
+        "description": "Explore career opportunities at our annual Career Fair."
+      },
+      {
+        "id": 105,
+        "title": "Cultural Fest",
+        "date": "2023-11-08",
+        "description": "Experience the rich cultural diversity at our Cultural Fest."
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 203,
+        "title": "Data Science Applications",
+        "author": "David Johnson",
+        "publishedDate": "2023-07-25",
+        "abstract": "Nullam rhoncus, metus eu aliquam posuere, nulla odio bibendum nunc, in tincidunt velit justo vel ante.",
+        "fileLink": "https://www.example.com/research/data_science.pdf"
+      },
+      {
+        "id": 204,
+        "title": "Advancements in Medicine",
+        "author": "Emily Williams",
+        "publishedDate": "2023-08-12",
+        "abstract": "Integer eu risus eget risus sodales mattis id quis nulla.",
+        "fileLink": "https://www.example.com/research/medicine_advancements.pdf"
+      }
+    ],
+    "sportsCategories": [
+      {
+        "id": 304,
+        "name": "Volleyball",
+        "description": "Join the volleyball team and compete in inter-college matches."
+      },
+      {
+        "id": 305,
+        "name": "Tennis",
+        "description": "Play tennis and represent the college in tournaments."
+      },
+      {
+        "id": 306,
+        "name": "Athletics",
+        "description": "Train for athletics and participate in track and field events."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "HTU College",
+    "image": "hhttps://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg/1920px-Corpus_Christi_College_New_Court%2C_Cambridge%2C_UK_-_Diliff.jpg",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Vivamus ac rhoncus augue, eget tristique mi. Morbi vel pharetra turpis, quis tincidunt quam.",
+    "events": [
+      {
+        "id": 101,
+        "title": "Orientation Day",
+        "date": "2023-08-15",
+        "description": "Join us for the Orientation Day for new students."
+      },
+      {
+        "id": 102,
+        "title": "Annual Sports Meet",
+        "date": "2023-10-20",
+        "description": "Cheer for your favorite teams in our Annual Sports Meet."
+      },
+      {
+        "id": 103,
+        "title": "Research Symposium",
+        "date": "2023-11-15",
+        "description": "Explore the latest research findings at our Research Symposium."
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 201,
+        "title": "Advancements in Artificial Intelligence",
+        "author": "John Doe",
+        "publishedDate": "2023-06-01",
+        "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque nec sapien eget venenatis.",
+        "fileLink": "https://www.example.com/research/ai_advancements.pdf"
+      },
+      {
+        "id": 202,
+        "title": "Sustainable Energy Solutions",
+        "author": "Jane Smith",
+        "publishedDate": "2023-07-10",
+        "abstract": "Praesent tempus facilisis tellus id laoreet. Nulla facilisi. Aenean euismod felis et nulla cursus.",
+        "fileLink": "https://www.example.com/research/sustainable_energy.pdf"
+      }
+    ],
+    "sportsCategories": [
+      {
+        "id": 301,
+        "name": "Football",
+        "description": "Join our football team and compete in inter-college tournaments."
+      },
+      {
+        "id": 302,
+        "name": "Basketball",
+        "description": "Show off your basketball skills and represent the college."
+      },
+      {
+        "id": 303,
+        "name": "Swimming",
+        "description": "Join the swimming team and participate in aquatic events."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cant Public College",
+    "image": "https://www.example.com/images/xyz_college.jpg",
+    "admissionProcess": "Vivamus venenatis lorem ac est laoreet interdum. Phasellus eu ante non mi eleifend auctor ut a erat.",
+    "events": [
+      {
+        "id": 104,
+        "title": "Career Fair",
+        "date": "2023-09-25",
+        "description": "Explore career opportunities at our annual Career Fair."
+      },
+      {
+        "id": 105,
+        "title": "Cultural Fest",
+        "date": "2023-11-08",
+        "description": "Experience the rich cultural diversity at our Cultural Fest."
+      }
+    ],
+    "researchWorks": [
+      {
+        "id": 203,
+        "title": "Data Science Applications",
+        "author": "David Johnson",
+        "publishedDate": "2023-07-25",
+        "abstract": "Nullam rhoncus, metus eu aliquam posuere, nulla odio bibendum nunc, in tincidunt velit justo vel ante.",
+        "fileLink": "https://www.example.com/research/data_science.pdf"
+      },
+      {
+        "id": 204,
+        "title": "Advancements in Medicine",
+        "author": "Emily Williams",
+        "publishedDate": "2023-08-12",
+        "abstract": "Integer eu risus eget risus sodales mattis id quis nulla.",
+        "fileLink": "https://www.example.com/research/medicine_advancements.pdf"
+      }
+    ],
+    "sportsCategories": [
+      {
+        "id": 304,
+        "name": "Volleyball",
+        "description": "Join the volleyball team and compete in inter-college matches."
+      },
+      {
+        "id": 305,
+        "name": "Tennis",
+        "description": "Play tennis and represent the college in tournaments."
+      },
+      {
+        "id": 306,
+        "name": "Athletics",
+        "description": "Train for athletics and participate in track and field events."
+      }
+    ]
+  }
+]
